@@ -5,13 +5,12 @@ const Navbar = () => {
 
   React.useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 170) {
+      if (window.scrollY > 50) {
         setScrollLevel(true);
       } else {
         setScrollLevel(false);
       }
     });
-    // window.scrollTo(0, 0);
   });
   return (
     <>
@@ -43,25 +42,25 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a
-                  className="nav-link fw-bold active"
+                  className="nav-link ms-lg-3 ms-md-0 fw-bold active"
                   aria-current="page"
                   href="/"
                 >
                   Home
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ms-lg-3 ms-md-0">
                 <a className="nav-link fw-bold" href="/">
                   Features
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ms-lg-3 ms-md-0">
                 <a className="nav-link fw-bold" href="/">
                   Pricing
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link fw-bold" href="/">
+              <li className="nav-item ms-lg-4 ms-md-0">
+                <a className="btn btn-primary btn-rounded shadow-lg" href="/">
                   Contact Us
                 </a>
               </li>

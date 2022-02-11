@@ -7,6 +7,18 @@
   background-size: cover;
 }
 
+.text-primary {
+  color: #010ae9;
+}
+
+.btn-primary {
+  background-color: #010ae9;
+}
+
+.bg-light {
+  background-color: #f3f5fa !important;
+}
+
 .hero {
   height: 90vh;
   display: flex;
@@ -16,5 +28,9 @@
 }
 
 .layer-blur {
-  backdrop-filter: blur(5rem);
+  backdrop-filter: blur(2rem);
+}
+
+.l-margin {
+  margin-left: 4.25rem !important;
 }
