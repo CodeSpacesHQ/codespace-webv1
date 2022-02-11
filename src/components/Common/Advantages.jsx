@@ -15,7 +15,7 @@ const Advantages = () => {
           <div className="col-lg-4 mt-sm-5 mt-md-0 col-md-6 ms-lg-4 ms-md-0">
             <div className="d-flex">
               <button className="btn btn-primary btn-lg btn-floating">
-                <i class="fas fa-baseball-ball"></i>
+                <i class="fas fa-chart-area"></i>
               </button>
               <h4 className="my-auto ms-4 text-dark fw-bold">
                 Built for impact
@@ -30,7 +30,7 @@ const Advantages = () => {
           <div className="col-lg-4 mt-sm-3 mt-md-0 col-md-6 ms-lg-4 ms-md-0">
             <div className="d-flex">
               <button className="btn btn-danger btn-lg btn-floating">
-                <i class="fas fa-baseball-ball"></i>
+                <i class="fas fa-sync"></i>
               </button>
               <h4 className="my-auto ms-4 text-dark fw-bold">
                 In sync with you
