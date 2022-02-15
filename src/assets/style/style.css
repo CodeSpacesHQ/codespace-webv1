@@ -1,3 +1,12 @@
+:root {
+  scroll-behavior: initial;
+}
+
+#navbar {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .bg {
   background: url("../img/bg.jpg"),
     linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
@@ -15,6 +24,10 @@
   background-color: #010ae9;
 }
 
+.btn-primary:hover {
+  background-color: #0109e9cb;
+}
+
 .bg-light {
   background-color: #f3f5fa !important;
 }
@@ -28,9 +41,19 @@
 }
 
 .layer-blur {
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(2rem);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .l-margin {
   margin-left: 4.25rem !important;
+}
+
+.ct-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

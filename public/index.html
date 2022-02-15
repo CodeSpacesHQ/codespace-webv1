@@ -27,6 +27,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
       rel="stylesheet"
     />
+    <!-- Owl Carousel -->
+    <link href="./css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="./css/owl.min.css" rel="stylesheet" />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -62,5 +66,26 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
     ></script>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          autoplayHoverPause: true,
+          responsiveClass: true,
+          margin: 10,
+          nav: true,
+          dots: true,
+          loop: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+          },
+        });
+      });
+    </script>
+    <script src="./js/owl.carousel.min.js"></script>
   </body>
 </html>

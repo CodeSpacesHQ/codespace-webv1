@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav
         className={
           scrollLevel
-            ? "navbar navbar-expand-lg navbar-dark layer-blur fixed-top shadow-none"
+            ? "navbar navbar-expand-lg navbar-light layer-blur fixed-top shadow-none"
             : "navbar navbar-expand-lg navbar-dark shadow-none"
         }
         id="navbar"
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item ms-lg-4 ms-md-0">
-                <a className="btn btn-primary btn-rounded shadow-lg" href="/">
+                <a className="btn btn-primary shadow" href="/">
                   Contact Us
                 </a>
               </li>
