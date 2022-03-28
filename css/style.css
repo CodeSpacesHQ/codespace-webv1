@@ -2,6 +2,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 header {
@@ -21,6 +24,17 @@ header {
   background-color: #3249a6 !important;
 }
 
+.bg-light {
+  background-color: #f8fdfd !important;
+}
+
+.btn-primary:hover {
+  background-color: #2a4096 !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: rgba(22, 22, 22, 0.1);
+}
 .text-primary {
   color: #3249a6 !important;
 }
