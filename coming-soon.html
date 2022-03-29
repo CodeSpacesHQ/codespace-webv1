@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mdb.min.css" />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/coming.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <title>Code Space | Coming Soon</title>
+  </head>
+  <body>
+    <header class="px-lg-5 px-md-3 pt-3">
+      <div class="container-fluid text-center">
+        <h1 class="fs-1 text-dark">
+          <span class="text-primary fw-bold">Code Space</span> Coming Soon...
+        </h1>
+        <p class="text-dark fs-5" style="font-family: 'DM Sans', sans-serif">
+          We are ready to rewrite the African narrative through technology.
+        </p>
+
+        <img
+          draggable="false"
+          class="mt-3 mb-1 img-responsive mw-100"
+          src="./img/line2.png"
+        />
+
+        <div class="d-flex mt-3" style="justify-content: center">
+          <p class="text-dark">Follow Us</p>
+
+          <div class="social-icons ms-3">
+            <a href="#">
+              <img draggable="false" src="./img/instagram.png" alt="" />
+            </a>
+            <a href="#">
+              <img
+                draggable="false"
+                class="ms-2"
+                src="./img/github.png"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                draggable="false"
+                class="ms-2"
+                src="./img/twitter.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-primary btn-lg custom-btn shadow-none mt-5"
+          style="border-radius: 1.25rem"
+        >
+          Join The Community
+        </button>
+      </div>
+    </header>
+
+    <script src="./js/mdb.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          responsiveClass: true,
+          margin: 20,
+          nav: true,
+          navText: ["<", ">"],
+          loop: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+            },
+            600: {
+              items: 2,
+              nav: true,
+            },
+            800: {
+              items: 3,
+              nav: true,
+            },
+            1200: {
+              items: 4,
+              nav: true,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
