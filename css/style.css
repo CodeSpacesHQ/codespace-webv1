@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+}
+
+.ep {
+  font-family: "Epilogue", sans-serif !important;
 }
 
 header {
