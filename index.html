@@ -147,7 +147,7 @@
           <div class="col-lg-4 col-md-6 mb-lg-0 mb-xl-0 mb-3">
             <img
               draggable="false"
-              class="mw-100 img-responsive"
+              class="mw-100 img-responsive mx-auto"
               src="./img/clinton.png"
               alt=""
             />
@@ -185,7 +185,7 @@
             and Developers
           </h1>
 
-          <div class="owl-carousel teams owl-theme">
+          <div class="owl-carousel teams">
             <div>
               <img
                 draggable="false"
@@ -309,36 +309,69 @@
 
         <div class="mt-5">
           <div class="container">
-            <div class="col-md-10 mx-auto">
-              <div class="owl-carousel testimonial owl-theme">
+            <div class="col-lg-10 col-md-12 mx-auto">
+              <div class="owl-carousel testimonial">
                 <div
-                  class="card bg-dark text-white"
-                  style="border-top-right-radius: 0px"
+                  class="card bg-dark text-white p-1"
+                  style="border-radius: 1.25rem; border-top-right-radius: 0px"
                 >
-                  <div class="card-body">
+                  <div class="card-body p-5">
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Repellat, vero odit eum nemo dolores facere rerum
-                      excepturi odio, ullam dolore eos est reiciendis earum
-                      officia optio iure at. Animi, earum.
+                      Please do something for us who have interest but don't
+                      know where to start,as it seem so hard viewing from
+                      outside here
                     </p>
 
-                    <div class="">
-                      <div class="mt-5 d-flex w-75">
-                        <img
-                          style="width: 60px; height: 60px"
-                          src="./img/Picture.png"
-                          alt=""
-                        />
+                    <div class="d-flex mt-3">
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./img/Picture.png"
+                        alt=""
+                      />
 
-                        <div class="fw-bold mt-2 ms-2">
-                          <p>Precious Solomon Kayili</p>
-                          <img
-                            src="./img/Gold Stars.png"
-                            style="margin-top: -15px"
-                            class="w-50"
-                          />
-                        </div>
+                      <div class="ms-3">
+                        <p class="fw-bold small">Precious Solomon Kayili</p>
+                        <p class="small ep" style="margin-top: -15px">
+                          UI/UX Designer
+                        </p>
+                        <img
+                          src="./img/Gold Stars.png"
+                          style="margin-top: -15px"
+                          class="w-50"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="card bg-dark text-white p-1"
+                  style="border-radius: 1.25rem; border-top-right-radius: 0px"
+                >
+                  <div class="card-body p-5">
+                    <p>
+                      Exactly, be clear in your mind about your passions and
+                      dreams, then it would be easy to pursue them.
+                      <span class="text-primary fw-bold">Clinton Imaro</span>
+                    </p>
+
+                    <div class="d-flex mt-3">
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./img/Picture (1).png"
+                        alt=""
+                      />
+
+                      <div class="ms-3">
+                        <p class="fw-bold small">Precious Solomon Kayili</p>
+                        <p class="small ep" style="margin-top: -15px">
+                          UI/UX Designer
+                        </p>
+                        <img
+                          src="./img/Rating.png"
+                          style="margin-top: -15px"
+                          class="w-50"
+                        />
                       </div>
                     </div>
                   </div>
@@ -428,7 +461,7 @@
         $(".testimonial").owlCarousel({
           responsiveClass: true,
           margin: 20,
-          nav: true,
+          nav: false,
           loop: true,
           responsive: {
             0: {
@@ -444,7 +477,7 @@
               nav: true,
             },
             1000: {
-              items: 2,
+              items: 1,
               nav: true,
             },
             1200: {
@@ -458,7 +491,7 @@
           responsiveClass: true,
           margin: 20,
           items: 4,
-          nav: true,
+          nav: false,
           loop: true,
           responsive: {
             0: {
