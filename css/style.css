@@ -12,7 +12,7 @@ body {
   font-family: "Epilogue", sans-serif !important;
 }
 
-header {
+.header {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -54,3 +54,16 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+.star-sm{
+  font-size: 13px;
+}
+@media screen and (min-width: 750px) {
+  .mw-50{
+  width: 600px;
+}
+.mr{
+  margin-right: 4rem;
+}
+}
+
