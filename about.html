@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon" />
     <title>Code Space</title>
   </head>
   <body>
-    <header class="bg-primary px-lg-5 px-md-3 pt-3" style="min-height: 70vh;">
+    <header class="bg-primary px-lg-5 px-md-3" style="min-height: 70vh">
       <div class="container-fluid">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light shadow-none mb-5">
@@ -43,7 +49,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white fw-bold" href="/about.html">About</a>
+                <a class="nav-link text-white fw-bold" href="/about.html"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">Teams</a>
@@ -58,198 +66,393 @@
           </div>
         </nav>
         <!-- End of Navbar -->
-        
-        <div class="text-white text-center px-5 pt-4">
-          <h1 class="ep" style="font-weight: 800; font-size: 50px;">About Us</h1>
-          <p class="fs-6 pt-2 ep">Agency provides a full service range including technical<br> skills, design, business understanding.</p>
-        </div>
-      </header>
-
-      <div class="container px-3 py-5">
-        <p class="text-primary text-uppercase ep">About</p>
-        <h1 class="text-black fw-bold ep">An Experience<br> Design Agency</h1>
-      <div class="d-flex flex-column flex-lg-row mt-5 text-black">
-          <img 
-          src="./img/svg/bitmap.svg" 
-          alt="bitmap" 
-          draggable="false"
-          class="mw-50 mw-100 mr img-responsive"
+        <div
+          class="d-flex"
+          style="
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 35vh;
+          "
         >
-        <p>CODESPACE is a Platform that aims to build a community for teenagers. The platform aims to show the world how ready and capable We teenagers are to rewrite the African narrative through technology.</p>
+          <div class="text-white text-center">
+            <div>
+              <h1 class="ep" style="font-weight: 800; font-size: 50px">
+                About Us
+              </h1>
+              <p class="fs-6 pt-2 ep text-center mx-auto" style="width: 65%">
+                Agency provides a full service range including technical skills,
+                design, business understanding.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </header>
+
+    <div class="container px-3 py-5">
+      <p class="text-primary text-uppercase ep">About</p>
+      <h1 class="text-black fw-bold ep">
+        An Experience<br />
+        Design Agency
+      </h1>
+
+      <div class="row mt-5">
+        <div
+          class="col-xl-6 col-lg-7 col-md-12"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+              ),
+              url(./img/about.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 25rem;
+          "
+        >
+          <button
+            class="btn shadow-none"
+            data-toggle="modal"
+            data-target="#videoModal"
+            style="height: 12rem; width: 12rem; border-radius: 50%"
+          >
+            <img src="./img/play.png" alt="" />
+          </button>
+        </div>
+        <div
+          class="col-xl-6 col-lg-5 col-md-12 ms-sm-0 ms-md-0 mt-3 mt-xl-0 mt-lg-0"
+        >
+          <p>
+            CODESPACE is a Platform that aims to build a community for
+            teenagers. The platform aims to show the world how ready and capable
+            We teenagers are to rewrite the African narrative through
+            technology.
+          </p>
+        </div>
       </div>
-   
-      <div class="bg-light">
-        <div class="team pb-5 pt-5 bg-primary">
-          <div class="container">
-            <p class="text-light ep text-uppercase">Our Team</p>
+    </div>
+
+    <!-- Video Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">Video Goes Here</div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light">
+      <div class="team pb-5 pt-5 bg-primary">
+        <div class="container">
+          <p class="text-light ep text-uppercase">Our Team</p>
+          <div class="d-lg-flex">
             <h1 class="ep fw-bold mb-5 text-white">
               Our Team of Designers <br />
               and Developers
             </h1>
-  
-            <div class="owl-carousel teams">
-              <div>
-                <img
-                  draggable="false"
-                  class="w-100 rounded-3 h-25"
-                  src="./img/team1.png"
-                  alt=""
-                />
-                <p class="mt-3 fw-bold text-light fs-4 ep">John Oseni</p>
-                <small class="text-light ep" style="margin-top: -10px">Developer</small>
+
+            <div class="ms-lg-auto mb-5 ms-lg-5 owl-nav">
+              <img
+                class="customPrevBtn"
+                role="presentation"
+                style="height: auto; cursor: pointer"
+                src="./img/left_white.png"
+                alt=""
+              />
+              <img
+                class="customNextBtn"
+                style="height: auto; cursor: pointer"
+                src="./img/right_white.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="owl-carousel teams">
+            <div>
+              <img
+                draggable="false"
+                class="w-100 rounded-3 h-25"
+                src="./img/team1.png"
+                alt=""
+              />
+              <p class="mt-3 fw-bold text-light fs-4 ep">John Oseni</p>
+              <small class="text-light ep" style="margin-top: -10px"
+                >Developer</small
+              >
+            </div>
+            <div>
+              <img
+                draggable="false"
+                class="w-100 rounded-3 h-25"
+                src="./img/team2.png"
+                alt=""
+              />
+              <p class="mt-3 fw-bold text-light fs-4 ep">John Oseni</p>
+              <small class="text-light ep">Developer</small>
+            </div>
+            <div>
+              <img
+                draggable="false"
+                class="w-100 rounded-3 h-25"
+                src="./img/team4.png"
+                alt=""
+              />
+              <p class="mt-3 fw-bold text-light fs-4 ep">John Oseni</p>
+              <small class="text-light ep" style="margin-top: -10px"
+                >Developer</small
+              >
+            </div>
+            <div>
+              <img
+                draggable="false"
+                class="w-100 rounded-3 h-25"
+                src="./img/team3.png"
+                alt=""
+              />
+              <p class="mt-3 fw-bold text-light fs-4 ep">John Oseni</p>
+              <small class="text-light ep" style="margin-top: -10px"
+                >Developer</small
+              >
+            </div>
+            <div>
+              <img
+                draggable="false"
+                class="w-100 rounded-3 mh-5"
+                src="./img/team5.png"
+                alt=""
+              />
+              <p class="mt-3 fw-bold text-light fs-4 ep">Samuel Adeyemi</p>
+              <small class="text-light ep" style="margin-top: -10px"
+                >Developer</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 pt-5 pb-5">
+        <div class="container bg-primary rounded-3">
+          <div class="card-body">
+            <div class="row c-section">
+              <div class="col-md-5">
+                <h1 class="text-white fw-bold display-4 ep">
+                  Let's Help Build <br />
+                  Your Dream <br />
+                  Projects
+                </h1>
+                <p
+                  class="text-white mt-5 text-light ep"
+                  style="margin-top: -10px"
+                >
+                  A digital agency is a business you hire to outsource your
+                  digital marketing efforts, instead of handling in-house.
+                </p>
+
+                <button
+                  class="btn btn-white mt-3 btn-lg fw-bold shadow-none custom-btn ep"
+                  style="color: #391400"
+                >
+                  Discover More
+                </button>
               </div>
-              <div>
+              <div class="col-md-6 mt-3 mt-lg-0">
                 <img
+                  class="img-responsive mw-100"
                   draggable="false"
-                  class="w-100 rounded-3 h-25"
-                  src="./img/team2.png"
+                  src="./img/pic.png"
                   alt=""
                 />
-                <p class="mt-3 fw-bold text-light fs-4 ep">John Oseni</p>
-                <small class="text-light ep">Developer</small>
-              </div>
-              <div>
-                <img
-                  draggable="false"
-                  class="w-100 rounded-3 h-25"
-                  src="./img/team4.png"
-                  alt=""
-                />
-                <p class="mt-3 fw-bold text-light fs-4 ep">John Oseni</p>
-                <small class="text-light ep" style="margin-top: -10px">Developer</small>
-              </div>
-              <div>
-                <img
-                  draggable="false"
-                  class="w-100 rounded-3 h-25"
-                  src="./img/team3.png"
-                  alt=""
-                />
-                <p class="mt-3 fw-bold text-light fs-4 ep">John Oseni</p>
-                <small class="text-light ep" style="margin-top: -10px">Developer</small>
-              </div>
-              <div>
-                <img
-                  draggable="false"
-                  class="w-100 rounded-3 mh-5"
-                  src="./img/team5.png"
-                  alt=""
-                />
-                <p class="mt-3 fw-bold text-light fs-4 ep">Samuel Adeyemi</p>
-                <small class="text-light ep" style="margin-top: -10px">Developer</small>
               </div>
             </div>
           </div>
         </div>
-  
-        <div class="mt-5 pt-5 pb-5">
-          <div class="container bg-primary rounded-3">
-            <div class="card-body">
-              <div class="row c-section">
-                <div class="col-md-5">
-                  <h1 class="text-white fw-bold display-4 ep">
-                    Let's Help Build <br />
-                    Your Dream <br />
-                    Projects
-                  </h1>
-                  <p class="text-white mt-5 text-light ep" style="margin-top: -10px">
-                    A digital agency is a business you hire to outsource your
-                    digital marketing efforts, instead of handling in-house.
-                  </p>
-  
-                  <button
-                    class="btn btn-white mt-3 btn-lg fw-bold shadow-none custom-btn ep"
-                    style="color: #391400"
-                  >
-                    Discover More
-                  </button>
-                </div>
-                <div class="col-md-6 mt-3 mt-lg-0">
-                  <img
-                    class="img-responsive mw-100"
-                    draggable="false"
-                    src="./img/pic.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="container-fluid bg-primary card-body rounded-0">
-          <h1 class="fw-bold text-center text-white">
-            We Are Loved By Users And <br />
-            Clients Worldwide
-          </h1>
-  
-          <div class="mt-5">
-            <div class="container">
-              <div class="col-lg-10 col-md-12 mx-auto">
-                <div class="owl-carousel testimonial">
-                  <div
-                    class="card bg-dark text-white p-1"
-                    style="border-radius: 1.25rem; border-top-right-radius: 0px"
-                  >
-                    <div class="card-body p-5">
-                      <p>
-                        Please do something for us who have interest but don't
-                        know where to start,as it seem so hard viewing from
-                        outside here
-                      </p>
-  
-                      <div class="d-flex mt-3">
+      </div>
+
+      <div class="container-fluid bg-primary card-body rounded-0">
+        <h1 class="fw-bold text-center text-white">
+          We Are Loved By Users And <br />
+          Clients Worldwide
+        </h1>
+
+        <div class="mt-5">
+          <div class="container">
+            <div class="col-lg-10 col-md-12 mx-auto">
+              <div class="owl-carousel testimonial">
+                <div
+                  class="card bg-dark text-white p-1"
+                  style="border-radius: 1.25rem; border-top-right-radius: 0px"
+                >
+                  <div class="card-body p-5">
+                    <p>
+                      Please do something for us who have interest but don't
+                      know where to start,as it seem so hard viewing from
+                      outside here
+                    </p>
+
+                    <div class="d-flex mt-3">
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./img/Picture.png"
+                        alt=""
+                      />
+
+                      <div class="ms-3">
+                        <p class="fw-bold small">Precious Solomon Kayili</p>
+                        <p class="small ep" style="margin-top: -15px">
+                          UI/UX Designer
+                        </p>
                         <img
-                          style="width: 50px; height: 50px"
-                          src="./img/Picture.png"
-                          alt=""
+                          src="./img/Gold Stars.png"
+                          style="margin-top: -15px"
+                          class="w-50"
                         />
-  
-                        <div class="ms-3">
-                          <p class="fw-bold small">Precious Solomon Kayili</p>
-                          <p class="small ep" style="margin-top: -15px">
-                            UI/UX Designer
-                          </p>
-                          <img
-                            src="./img/Gold Stars.png"
-                            style="margin-top: -15px"
-                            class="w-50"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
-  
-                  <div
-                    class="card bg-dark text-white p-1"
-                    style="border-radius: 1.25rem; border-top-right-radius: 0px"
-                  >
-                    <div class="card-body p-5">
-                      <p>
-                        Exactly, be clear in your mind about your passions and
-                        dreams, then it would be easy to pursue them.
-                        <span class="text-primary fw-bold">Clinton Imaro</span>
-                      </p>
-  
-                      <div class="d-flex mt-3">
+                </div>
+
+                <div
+                  class="card bg-dark text-white p-1"
+                  style="border-radius: 1.25rem; border-top-right-radius: 0px"
+                >
+                  <div class="card-body p-5">
+                    <p>
+                      Please do something for us who have interest but don't
+                      know where to start,as it seem so hard viewing from
+                      outside here
+                    </p>
+
+                    <div class="d-flex mt-3">
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./img/Picture.png"
+                        alt=""
+                      />
+
+                      <div class="ms-3">
+                        <p class="fw-bold small">Precious Solomon Kayili</p>
+                        <p class="small ep" style="margin-top: -15px">
+                          UI/UX Designer
+                        </p>
                         <img
-                          style="width: 50px; height: 50px"
-                          src="./img/Picture (1).png"
-                          alt=""
+                          src="./img/Gold Stars.png"
+                          style="margin-top: -15px"
+                          class="w-50"
                         />
-  
-                        <div class="ms-3">
-                          <p class="fw-bold small">Precious Solomon Kayili</p>
-                          <p class="small ep" style="margin-top: -15px">
-                            UI/UX Designer
-                          </p>
-                          <img
-                            src="./img/Rating.png"
-                            style="margin-top: -15px"
-                            class="w-50"
-                          />
-                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="card bg-dark text-white p-1"
+                  style="border-radius: 1.25rem; border-top-right-radius: 0px"
+                >
+                  <div class="card-body p-5">
+                    <p>
+                      Please do something for us who have interest but don't
+                      know where to start,as it seem so hard viewing from
+                      outside here
+                    </p>
+
+                    <div class="d-flex mt-3">
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./img/Picture.png"
+                        alt=""
+                      />
+
+                      <div class="ms-3">
+                        <p class="fw-bold small">Precious Solomon Kayili</p>
+                        <p class="small ep" style="margin-top: -15px">
+                          UI/UX Designer
+                        </p>
+                        <img
+                          src="./img/Gold Stars.png"
+                          style="margin-top: -15px"
+                          class="w-50"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="card bg-dark text-white p-1"
+                  style="border-radius: 1.25rem; border-top-right-radius: 0px"
+                >
+                  <div class="card-body p-5">
+                    <p>
+                      Please do something for us who have interest but don't
+                      know where to start,as it seem so hard viewing from
+                      outside here
+                    </p>
+
+                    <div class="d-flex mt-3">
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./img/Picture.png"
+                        alt=""
+                      />
+
+                      <div class="ms-3">
+                        <p class="fw-bold small">Precious Solomon Kayili</p>
+                        <p class="small ep" style="margin-top: -15px">
+                          UI/UX Designer
+                        </p>
+                        <img
+                          src="./img/Gold Stars.png"
+                          style="margin-top: -15px"
+                          class="w-50"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="card bg-dark text-white p-1"
+                  style="border-radius: 1.25rem; border-top-right-radius: 0px"
+                >
+                  <div class="card-body p-5">
+                    <p>
+                      Exactly, be clear in your mind about your passions and
+                      dreams, then it would be easy to pursue them.
+                      <span class="text-primary fw-bold">Clinton Imaro</span>
+                    </p>
+
+                    <div class="d-flex mt-3">
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./img/Picture (1).png"
+                        alt=""
+                      />
+
+                      <div class="ms-3">
+                        <p class="fw-bold small">Precious Solomon Kayili</p>
+                        <p class="small ep" style="margin-top: -15px">
+                          UI/UX Designer
+                        </p>
+                        <img
+                          src="./img/Rating.png"
+                          style="margin-top: -15px"
+                          class="w-50"
+                        />
                       </div>
                     </div>
                   </div>
@@ -259,76 +462,85 @@
           </div>
         </div>
       </div>
-  
-      <!-- Footer -->
-      <footer class="bg-light text-lg-left">
-        <!-- Grid container -->
-        <div class="container px-3 py-5">
-          <!--Grid row-->
-          <div class="row my-auto mt-3">
-            <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-md-0">
-              <h5 class="fw-bold text-dark fs-3">Code Space.</h5>
-  
-              <p class="pt-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                corporis vitae repudiandae
-              </p>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-lg-6 mt-5 mt-lg-0 col-md-12 mb-md-0">
-              <div>
-                <div
-                  class="social-icons d-flex"
-                  style="justify-content: flex-end"
-                >
-                  <a href="#">
-                    <img draggable="false" src="./img/instagram.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img
-                      draggable="false"
-                      class="ms-2"
-                      src="./img/youtube.png"
-                      alt=""
-                    />
-                  </a>
-                  <a href="#">
-                    <img
-                      draggable="false"
-                      class="ms-2"
-                      src="./img/dribbble.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="mt-4 ms-auto fs-5">
-                <a href="mailto: hello@codespace.com">
-                  <span class="text-dark" class="pe-2">Send us a question:</span>
-                  hello@codespace.com
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-lg-left">
+      <!-- Grid container -->
+      <div class="container px-3 py-5">
+        <!--Grid row-->
+        <div class="row my-auto mt-3">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-md-0">
+            <h5 class="fw-bold text-dark fs-3">Code Space.</h5>
+
+            <p class="pt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+              atque ea quis molestias. Fugiat pariatur maxime quis culpa
+              corporis vitae repudiandae
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 mt-5 mt-lg-0 col-md-12 mb-md-0">
+            <div>
+              <div
+                class="social-icons d-flex"
+                style="justify-content: flex-end"
+              >
+                <a href="#">
+                  <img draggable="false" src="./img/social1.png" alt="" />
+                </a>
+                <a href="#">
+                  <img
+                    draggable="false"
+                    class="ms-3"
+                    src="./img/social2.png"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    draggable="false"
+                    class="ms-3"
+                    src="./img/social3.png"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    draggable="false"
+                    class="ms-3"
+                    src="./img/social4.png"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
-            <!--Grid column-->
+            <div class="mt-4 ms-auto fs-5">
+              <a href="mailto: hello@codespace.com">
+                <span class="text-dark" class="pe-2">Send us a question:</span>
+                hello@codespace.com
+              </a>
+            </div>
           </div>
-          <!--Grid row-->
+          <!--Grid column-->
         </div>
-        <!-- Grid container -->
-  
-        <!-- Copyright -->
-        <div class="text-center my-auto p-3">
-          <p class="text-dark">
-            &copy; 2022 | All Right's Reserved by
-            <a class="text-dark" href="https://codesspace.in/">Code Space</a>
-          </p>
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center my-auto p-3">
+        <p class="text-dark">
+          &copy; 2022 | All Right's Reserved by
+          <a class="text-dark" href="/">Code Space</a>
+        </p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script src="./js/mdb.min.js"></script>
     <script src="./js/jquery.min.js"></script>
@@ -342,43 +554,54 @@
           loop: true,
           responsive: {
             0: {
-              items: 1
+              items: 1,
             },
             600: {
-              items: 1
+              items: 1,
             },
             800: {
-              items: 1
+              items: 1,
             },
             1000: {
-              items: 1
+              items: 1,
             },
             1200: {
-              items: 2
+              items: 2,
             },
           },
         });
 
-        $(".teams").owlCarousel({
+        var teamsCarousel = $(".teams");
+
+        teamsCarousel.owlCarousel({
           responsiveClass: true,
           margin: 20,
           items: 4,
-          nav: false,
+          nav: true,
           loop: true,
           responsive: {
             0: {
-              items: 1
+              items: 1,
             },
             600: {
-              items: 2
+              items: 2,
             },
             800: {
-              items: 3
+              items: 3,
             },
             1200: {
-              items: 4
+              items: 4,
             },
           },
+        });
+
+        // Go to the next item
+        $(".customNextBtn").click(function () {
+          teamsCarousel.trigger("next.owl.carousel");
+        });
+        // Go to the previous item
+        $(".customPrevBtn").click(function () {
+          teamsCarousel.trigger("prev.owl.carousel");
         });
       });
     </script>

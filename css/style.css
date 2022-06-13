@@ -55,15 +55,47 @@ body {
   align-items: center;
 }
 
-.star-sm{
-  font-size: 13px;
-}
-@media screen and (min-width: 750px) {
-  .mw-50{
-  width: 600px;
-}
-.mr{
-  margin-right: 4rem;
-}
+.owl-dot {
+  height: 0.60rem;
+  width: 0.60rem;
+  border-radius: 50%;
+  background-color: #ccc !important;
+  cursor: pointer;
+  margin-right: 4px;
 }
 
+@keyframes dotAnimation {
+  0% {
+    width: 0.5rem;
+  }
+
+  20% {
+    width: 1rem;
+  }
+
+  80% {
+    width: 1.5rem;
+  }
+
+  100% {
+    width: 2rem;
+  }
+}
+
+.owl-dot.active {
+  width: 2rem;
+  border-radius: 1rem;
+  animation: dotAnimation 0.2s normal;
+  animation-direction: alternate;
+  background-color: #e6772d !important;
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.team .owl-dots {
+  display: none !important;
+}
