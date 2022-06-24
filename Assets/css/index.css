@@ -1,0 +1,72 @@
+/* Only Authorised are allowed to Edit  */
+/* Css File for Code Space INC.  */
+/* Poppins Font Import  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* Default Styles */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* General Colors  */
+:root {
+  --main-text-color: #000;
+  --active-color: #4265d6;
+}
+
+/* General Styles  */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--main-text-color);
+}
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+.container-fluid {
+  width: 90%;
+}
+.brand {
+  color: var(--active-color);
+}
+.bold {
+  font-weight: 600;
+}
+/* Header Styles  */
+header {
+  min-height: 100vh;
+  background-image: url("/Assets/img/header-bg.png");
+  background-size: cover;
+}
+
+/* Navbar Styles  */
+nav {
+  height: calc(100vh - 87vh);
+}
+nav.navbar {
+  box-shadow: none !important;
+  width: 100%;
+}
+nav .navbar-brand {
+  color: var(--main-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 54px;
+}
+nav a.nav-link {
+  color: var(--main-text-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+nav a.active {
+  color: var(--active-color);
+}
+
+/* Showcase Style  */
