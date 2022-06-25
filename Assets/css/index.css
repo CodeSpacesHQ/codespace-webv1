@@ -131,7 +131,30 @@ section.team-section h4 {
   font-size: 1rem;
 }
 section.team-section h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.5rem;
 }
 /* Team Slider  */
+.team-slider-item .team-img {
+  border-radius: 6px;
+}
+.team-slider-item h3 {
+  margin-top: 14px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.team-slider-item p {
+  font-size: 1rem;
+}
+/* Intro Section  */
+section.intro-section {
+  background-color: var(--bg-color);
+}
+.intro-section .intro-text h2 {
+  font-weight: 600;
+}
+.intro-section .line-container {
+  display: flex;
+  justify-content: center;
+}
