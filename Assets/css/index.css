@@ -15,6 +15,7 @@
 :root {
   --main-text-color: #000;
   --active-color: #4265d6;
+  --bg-color: #f9f8fe;
 }
 
 /* General Styles  */
@@ -43,7 +44,7 @@ header {
   min-height: 100vh;
   background-image: url("/Assets/img/header-bg.png");
   background-size: cover;
-  background-color: #f9f8fe;
+  background-color: var(--bg-color);
 }
 
 /* Navbar Styles  */
@@ -117,3 +118,20 @@ nav a.active {
   justify-content: center;
   align-items: center;
 }
+/* Main Styles  */
+main {
+  background-color: var(--bg-color);
+}
+main .container-fluid * {
+  position: relative;
+  z-index: 3 !important;
+}
+/* Team Section  */
+section.team-section h4 {
+  font-size: 1rem;
+}
+section.team-section h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+/* Team Slider  */

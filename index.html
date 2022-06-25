@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery CDN  -->
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Swiper Css  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- Mdbootstrap CSS  -->
     <link rel="stylesheet" href="Assets/vendors/mdbootstrap/css/mdb.min.css">
     <!-- Core CSS   -->
@@ -91,8 +96,98 @@
             </div>
         </div>
     </header>
+    <!-- Main  -->
+    <main>
+        <div class="container-fluid pt-5">
+            <section class="team-section pt-5">
+                <h4 class="text-uppercase brand mb-2 ">Our team</h4>
+                <h2>Team of Designers <br> and Developers</h2>
+                <!-- Slider  -->
+                <div class="team-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Team Slider Item  -->
+                        <div class="swiper-slide">
+                            <div class="team-slider-item">
+                                <img src="Assets/img/team/edwin.png" class="team-img w-responsive img-fluid w-100"
+                                    alt="" />
+                                <h3>Edwin Igwegbuike</h3>
+                                <p>Designer</p>
+                            </div>
+                        </div>
+                        <!-- End of Team Slider Item i-->
+
+                        <!-- Team Slider Item  -->
+                        <div class="swiper-slide">
+                            <div class="team-slider-item">
+                                <img src="Assets/img/team/john.png" class="team-img w-responsive img-fluid w-100"
+                                    alt="" />
+                                <h3>John Oseni</h3>
+                                <p>Web and Blockhain Developer</p>
+                            </div>
+                        </div>
+                        <!-- End of Team Slider Item i-->
+
+                        <!-- Team Slider Item  -->
+                        <div class="swiper-slide">
+                            <div class="team-slider-item">
+                                <img src="Assets/img/team/odetola.png" class="team-img w-responsive img-fluid w-100"
+                                    alt="" />
+                                <h3>Odetola Oreoluwa</h3>
+                                <p>Graphics Designer</p>
+                            </div>
+                        </div>
+                        <!-- End of Team Slider Item i-->
+
+                        <!-- Team Slider Item  -->
+                        <div class="swiper-slide">
+                            <div class="team-slider-item">
+                                <img src="Assets/img/team/isabella.png" class="team-img w-responsive img-fluid w-100"
+                                    alt="" />
+                                <h3>Isabella Enaworu</h3>
+                                <p>Chief Marketing Officer</p>
+                            </div>
+                        </div>
+                        <!-- End of Team Slider Item i-->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 <!-- Mdbootstrap Js  -->
 <script src="Assets/vendors/mdbootstrap/js/mdb.min.js"></script>
+<!-- jQuery  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Swiper Js  -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    new Swiper(".team-slider", {
+        speed: 600,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: "auto",
+        pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 40,
+            },
+
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        },
+    });
+</script>
 
 </html>
