@@ -41,7 +41,7 @@ a {
 
 /* Header Styles  */
 header {
-  min-height: 100vh;
+  min-height: auto;
   background-image: url("/Assets/img/header-bg.png");
   background-size: cover;
   background-color: var(--bg-color);
@@ -72,6 +72,14 @@ nav a.nav-link {
 nav a.active {
   color: var(--active-color);
 }
+/* Navbar Media Query  */
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  nav .navbar-nav {
+    background-color: var(--bg-color);
+    padding: 0px 20px;
+  }
+}
 
 /* Showcase Style  */
 .showcase-title {
@@ -79,6 +87,7 @@ nav a.active {
 }
 .showcase-socials {
   display: flex;
+  justify-content: flex-start;
   gap: 25px;
 }
 .showcase-img-container {
@@ -91,35 +100,50 @@ nav a.active {
 }
 .showcase-img {
   width: 85%;
+  display: block;
 }
+
 .showcase-btn-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 25px;
 }
-.btn.btn-discover {
+.btn.btn-primary {
   background-color: var(--active-color);
-  color: #fff;
-  border-radius: 10px;
-  flex-wrap: nowrap;
-  padding: 20px 25px;
-  font-size: 0.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 9px;
-  font-weight: 500;
 }
-.btn.btn-outline-black {
-  font-size: 0.9rem;
-  border-radius: 10px;
-  padding: 20px 25px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Showcase Media Query  */
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .showcase {
+    padding-top: 20px;
+  }
+  .showcase-img-container {
+    display: none;
+  }
+  .showcase-img {
+    display: none;
+  }
+  .showcase-title {
+    font-weight: 600;
+    text-align: center;
+  }
+  .showcase-bio {
+    display: none;
+  }
+  .showcase-socials {
+    text-align: center;
+    justify-content: center;
+  }
+  .showcase-btn-container {
+    justify-content: center;
+  }
 }
+
 /* Main Styles  */
 main {
   background-color: var(--bg-color);
@@ -148,6 +172,27 @@ section.team-section h2 {
 }
 .team-slider-item p {
   font-size: 1rem;
+}
+/* Team Section Media Query  */
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .br {
+    display: none;
+  }
+  section.team-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .team-slider-item h3 {
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .team-slider-item p {
+    font-size: 0.5rem;
+  }
 }
 /* Intro Section  */
 section.intro-section {
@@ -217,4 +262,38 @@ section.team-projects {
   text-align: start;
   font-size: 1rem;
   font-weight: 400;
+}
+/* Team Projects Media Query  */
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  /* Afro watch  */
+  .team-project-slider .team-project-slider-item.afro-watch {
+    background: url("/Assets/img/afrowatch-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    min-width: auto;
+    border-radius: 20px;
+    position: relative;
+  }
+  /* Covdash  */
+  .team-project-slider .team-project-slider-item.covdash {
+    background: url("/Assets/img/covdash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 418px;
+    min-width: auto;
+    border-radius: 20px;
+    position: relative;
+  }
+  /* GPA Calculator  */
+  .team-project-slider .team-project-slider-item.gpa-calculator {
+    background: url("/Assets/img/gpa-calculator.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 418px;
+    min-width: auto;
+    border-radius: 20px;
+    position: relative;
+  }
 }
