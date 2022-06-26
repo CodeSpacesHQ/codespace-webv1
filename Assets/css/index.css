@@ -94,6 +94,7 @@ nav a.active {
 }
 .showcase-btn-container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   gap: 25px;
 }
@@ -101,6 +102,7 @@ nav a.active {
   background-color: var(--active-color);
   color: #fff;
   border-radius: 10px;
+  flex-wrap: nowrap;
   padding: 20px 25px;
   font-size: 0.9rem;
   display: flex;
@@ -157,4 +159,62 @@ section.intro-section {
 .intro-section .line-container {
   display: flex;
   justify-content: center;
+}
+/* Team Projects Section  */
+section.team-projects {
+  text-align: center;
+}
+.team-projects .team-projects-h1 {
+  font-weight: 700;
+}
+.team-projects .team-projects-bio-p {
+  width: auto;
+  margin: auto;
+}
+/* Afro watch  */
+.team-project-slider .team-project-slider-item.afro-watch {
+  background: url("/Assets/img/afrowatch-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  min-width: 300px;
+  border-radius: 20px;
+  position: relative;
+}
+/* Covdash  */
+.team-project-slider .team-project-slider-item.covdash {
+  background: url("/Assets/img/covdash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 418px;
+  min-width: 300px;
+  border-radius: 20px;
+  position: relative;
+}
+/* GPA Calculator  */
+.team-project-slider .team-project-slider-item.gpa-calculator {
+  background: url("/Assets/img/gpa-calculator.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 418px;
+  min-width: 300px;
+  border-radius: 20px;
+  position: relative;
+}
+.team-project-slider .team-project-slider-item .team-project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.team-project-slider .team-project-slider-item .team-project-header h1 {
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.team-project-slider .team-project-slider-item p {
+  padding: 0 23px;
+  color: var(--main-text-color);
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 400;
 }
