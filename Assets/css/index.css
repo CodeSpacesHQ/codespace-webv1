@@ -73,14 +73,6 @@ nav a.nav-link {
 nav a.active {
   color: var(--active-color);
 }
-/* Navbar Media Query  */
-@media only screen and (max-width: 425px) {
-  /*Small smartphones [325px -> 425px]*/
-  nav .navbar-nav {
-    background-color: var(--bg-color);
-    padding: 0px 20px;
-  }
-}
 
 /* Showcase Style  */
 .showcase-title {
@@ -117,32 +109,13 @@ nav a.active {
   align-items: center;
   gap: 9px;
 }
-/* Showcase Media Query  */
-@media only screen and (max-width: 425px) {
-  /*Small smartphones [325px -> 425px]*/
-  .showcase {
-    padding-top: 20px;
-  }
-  .showcase-img-container {
-    display: none;
-  }
-  .showcase-img {
-    display: none;
-  }
-  .showcase-title {
-    font-weight: 600;
-    text-align: center;
-  }
-  .showcase-bio {
-    display: none;
-  }
-  .showcase-socials {
-    text-align: center;
-    justify-content: center;
-  }
-  .showcase-btn-container {
-    justify-content: center;
-  }
+.showcase-text-container {
+  position: relative;
+}
+.showcase-arrow-icon-svg {
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 
 /* Main Styles  */
@@ -175,27 +148,7 @@ section.team-section h2 {
 .team-slider-item p {
   font-size: 1rem;
 }
-/* Team Section Media Query  */
 
-@media only screen and (max-width: 425px) {
-  /*Small smartphones [325px -> 425px]*/
-  .br {
-    display: none;
-  }
-  section.team-section h2 {
-    font-weight: 700;
-    font-size: 2rem;
-  }
-  .team-slider-item h3 {
-    margin-top: 14px;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 3px;
-  }
-  .team-slider-item p {
-    font-size: 0.5rem;
-  }
-}
 /* Intro Section  */
 section.intro-section {
   background-color: var(--bg-color);
@@ -212,13 +165,7 @@ section.intro-section {
 .line {
   width: 65%;
 }
-/* Intro Section Media Query  */
-@media only screen and (max-width: 425px) {
-  /*Small smartphones [325px -> 425px]*/
-  .intro-section .line-and-text-container .line {
-    display: none;
-  }
-}
+
 /* Team Projects Section  */
 section.team-projects {
   text-align: center;
@@ -277,9 +224,97 @@ section.team-projects {
   font-size: 1rem;
   font-weight: 400;
 }
-/* Team Projects Media Query  */
-@media only screen and (max-width: 425px) {
+
+section.headline {
+  padding: 50px 0px;
+  overflow: hidden;
+}
+.headline .title-and-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headline .clinton-headline-container {
+  position: relative;
+}
+.headline .clinton-headline-container h2 {
+  padding: 8px;
+  padding-left: 20px;
+  position: absolute;
+  top: 60%;
+  color: #fff;
+}
+.headline .clinton-headline-container p {
+  padding: 8px;
+  padding-left: 20px;
+  position: absolute;
+  top: 80%;
+  color: #fff;
+}
+/* Navbar Media Query  */
+@media only screen and (max-width: 1200px) {
   /*Small smartphones [325px -> 425px]*/
+  nav .navbar-nav {
+    background-color: var(--bg-color);
+    padding: 0px 20px;
+  }
+
+  /* Showcase Media Query  */
+  .showcase {
+    padding-top: 20px;
+  }
+  .showcase-img-container {
+    display: none;
+  }
+  .showcase-img {
+    display: none;
+  }
+  .showcase-title {
+    font-weight: 600;
+    text-align: center;
+  }
+  .showcase-bio {
+    display: none;
+  }
+  .showcase-socials {
+    text-align: center;
+    justify-content: center;
+  }
+  .showcase-btn-container {
+    justify-content: center;
+  }
+  .showcase-text-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .showcase-arrow-icon-svg {
+    position: absolute;
+    right: -50px;
+    top: -50px;
+  }
+  /* Team Section Media Query  */
+  .br {
+    display: none;
+  }
+  section.team-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .team-slider-item h3 {
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .team-slider-item p {
+    font-size: 0.5rem;
+  }
+  /* Intro Section Media Query  */
+  .intro-section .line-and-text-container .line {
+    display: none;
+  }
+
+  /* Team Projects Media Query  */
   /* Afro watch  */
   .team-project-slider .team-project-slider-item.afro-watch {
     background: url("/Assets/img/afrowatch-bg.png");
@@ -309,5 +344,9 @@ section.team-projects {
     min-width: auto;
     border-radius: 20px;
     position: relative;
+  }
+  /* Headline Media Query  */
+  .headline .more {
+    display: none;
   }
 }
