@@ -16,6 +16,7 @@
   --main-text-color: #000;
   --active-color: #4265d6;
   --bg-color: #f9f8fe;
+  --secondary-bg: #f8fdfd;
 }
 
 /* General Styles  */
@@ -153,6 +154,7 @@ main .container-fluid * {
   z-index: 3 !important;
 }
 /* Team Section  */
+
 section.team-section h4 {
   font-size: 1rem;
 }
@@ -200,10 +202,22 @@ section.intro-section {
 }
 .intro-section .intro-text h2 {
   font-weight: 600;
+  white-space: nowrap;
 }
-.intro-section .line-container {
-  display: flex;
-  justify-content: center;
+.intro-section .line-and-text-container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.line {
+  width: 65%;
+}
+/* Intro Section Media Query  */
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .intro-section .line-and-text-container .line {
+    display: none;
+  }
 }
 /* Team Projects Section  */
 section.team-projects {
