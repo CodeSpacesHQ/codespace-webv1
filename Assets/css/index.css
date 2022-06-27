@@ -224,7 +224,7 @@ section.team-projects {
   font-size: 1rem;
   font-weight: 400;
 }
-
+/* Headline Styles  */
 section.headline {
   padding: 50px 0px;
   overflow: hidden;
@@ -251,6 +251,41 @@ section.headline {
   top: 80%;
   color: #fff;
 }
+.headline .building-future-headline {
+  position: relative;
+}
+.headline .building-future-headline h2 {
+  position: absolute;
+  top: 30%;
+  padding: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: auto;
+}
+.headline .oseni-headline {
+  position: relative;
+}
+.headline .oseni-headline h3 {
+  position: absolute;
+  top: 70%;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0px 10px;
+  text-transform: uppercase;
+}
+.headline .precious-kayili-headline {
+  position: relative;
+}
+.headline .precious-kayili-headline h3 {
+  position: absolute;
+  top: 65%;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0px 10px;
+  text-transform: capitalize;
+}
+
 /* Navbar Media Query  */
 @media only screen and (max-width: 1200px) {
   /*Small smartphones [325px -> 425px]*/
@@ -347,6 +382,9 @@ section.headline {
   }
   /* Headline Media Query  */
   .headline .more {
+    display: none;
+  }
+  .headline .headline-grid {
     display: none;
   }
 }
