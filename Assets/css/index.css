@@ -1,7 +1,7 @@
 /* Only Authorised are allowed to Edit  */
 /* Css File for Code Space INC.  */
 /* Poppins Font Import  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /* Default Styles */
 * {
@@ -239,14 +239,15 @@ section.headline {
 }
 .headline .clinton-headline-container h2 {
   padding: 8px;
-  padding-left: 20px;
+  padding-left: 29px;
   position: absolute;
   top: 60%;
   color: #fff;
 }
 .headline .clinton-headline-container p {
   padding: 8px;
-  padding-left: 20px;
+  padding-left: 29px;
+  font-size: 0.9rem;
   position: absolute;
   top: 80%;
   color: #fff;
@@ -285,7 +286,66 @@ section.headline {
   padding: 0px 10px;
   text-transform: capitalize;
 }
+/* Vision Section  */
+section.vision-section-container {
+}
+.vision-section-container .vision-section-img-container {
+  text-align: center;
+}
+.vision-section-container .vision-section-text-container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
 
+.vision-section-container .vision-section-text-container h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.vision-section-container .vision-section-text-container p {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+/* Build Your Dream Styles  */
+section.build-your-dream-container {
+  background-color: var(--active-color);
+}
+.build-your-dream-container .container-fluid .build-your-dream-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 90px;
+}
+.build-your-dream-container
+  .container-fluid
+  .build-your-dream-text-container
+  h1 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.build-your-dream-container
+  .container-fluid
+  .build-your-dream-text-container
+  p {
+  color: #fff;
+  padding-bottom: 25px;
+  font-size: 0.8rem;
+}
+.build-your-dream-container .container-fluid .build-your-dream-img-container {
+  text-align: center;
+}
+.build-your-dream-container
+  .container-fluid
+  .build-your-dream-img-container
+  .build-future-project-img-1 {
+  position: relative;
+  top: -20px;
+}
 /* Navbar Media Query  */
 @media only screen and (max-width: 1200px) {
   /*Small smartphones [325px -> 425px]*/
