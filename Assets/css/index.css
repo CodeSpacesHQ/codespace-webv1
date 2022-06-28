@@ -15,7 +15,7 @@
 :root {
   --main-text-color: #000;
   --primary-text-color: #fff;
-  --active-color: #4265d6; 
+  --active-color: #4265d6;
   --bg-color: #f9f8fe;
   --secondary-bg: #f8fdfd;
 }
@@ -31,7 +31,7 @@ a {
   text-decoration: none;
   color: var(--main-text-color);
 }
-.primary-text{
+.primary-text {
   color: var(--primary-text-color);
 }
 .container-fluid {
@@ -50,11 +50,11 @@ header {
   background-size: cover;
   background-color: var(--bg-color);
 }
-.header{
-   background-image: url("/Assets/img/header-bg.png");
+.header {
+  background-image: url("/Assets/img/header-bg.png");
 }
 
-.ai-center{
+.ai-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,7 +363,6 @@ section.build-your-dream-container {
 }
 /* Navbar Media Query  */
 @media only screen and (max-width: 1200px) {
-
   /* Showcase Media Query  */
   .showcase {
     padding-top: 20px;
@@ -457,10 +456,74 @@ section.build-your-dream-container {
   .headline .headline-grid {
     display: none;
   }
+
+  .vision-section-container .vision-section-text-container {
+    padding: 0px;
+    display: block;
+    text-align: center;
+  }
+
+  .vision-section-container .vision-section-text-container h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .vision-section-container .vision-section-text-container p {
+    text-align: left;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* Build Your Dream Styles  */
+  section.build-your-dream-container {
+    background-color: var(--active-color);
+  }
+  .build-your-dream-container
+    .container-fluid
+    .build-your-dream-text-container {
+    display: block;
+    padding-left: 0px;
+    padding: 0px;
+    padding-top: 40px;
+    text-align: center;
+  }
+  .build-your-dream-container
+    .container-fluid
+    .build-your-dream-text-container
+    h1 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .build-your-dream-container
+    .container-fluid
+    .build-your-dream-text-container
+    p {
+    color: #fff;
+    padding-bottom: 25px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .build-your-dream-container .container-fluid .build-your-dream-img-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .build-your-dream-container
+    .container-fluid
+    .build-your-dream-img-container
+    .build-future-project-img-1 {
+    position: static;
+  }
 }
 @media only screen and (max-width: 1000px) {
   nav .navbar-nav {
     background: var(--bg-color);
     padding: 0px 20px;
   }
+}
+@media only screen and (min-width: 1900px) {
+  .showcase-img {
+    width: 50% !important;
   }
+}
