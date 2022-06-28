@@ -14,6 +14,7 @@
 /* General Colors  */
 :root {
   --main-text-color: #000;
+  --primary-text-color: #fff;
   --active-color: #4265d6;
   --bg-color: #f9f8fe;
 }
@@ -23,10 +24,13 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 a {
   text-decoration: none;
+  color: var(--primary-text-color);
+}
+.main-text{
   color: var(--main-text-color);
 }
 .container-fluid {
@@ -57,20 +61,26 @@ nav.navbar {
   width: 100%;
 }
 nav .navbar-brand {
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 54px;
 }
+nav .main-text{
+    color: var(--main-text-color);
+}
+nav a.main-text{
+    color: var(--main-text-color);
+}
 nav a.nav-link {
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
 }
 nav a.active {
-  color: var(--active-color);
+  color: #fff;
 }
 /* Navbar Media Query  */
 @media only screen and (max-width: 425px) {
@@ -145,10 +155,10 @@ nav a.active {
 }
 
 /* Main Styles  */
-main {
+primary {
   background-color: var(--bg-color);
 }
-main .container-fluid * {
+primary .container-fluid * {
   position: relative;
   z-index: 3 !important;
 }
@@ -258,7 +268,7 @@ section.team-projects {
 }
 .team-project-slider .team-project-slider-item p {
   padding: 0 23px;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
   text-align: start;
   font-size: 1rem;
   font-weight: 400;
