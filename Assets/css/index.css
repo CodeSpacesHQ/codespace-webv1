@@ -305,10 +305,6 @@ section.headline {
 
 /* Navbar Media Query  */
 @media only screen and (max-width: 1200px) {
-  /*Small smartphones [325px -> 425px]*/
-  nav .navbar-nav {
-    padding: 0px 20px;
-  }
 
   /* Showcase Media Query  */
   .showcase {
@@ -404,3 +400,9 @@ section.headline {
     display: none;
   }
 }
+@media only screen and (max-width: 1000px) {
+  nav .navbar-nav {
+    background: var(--bg-color);
+    padding: 0px 20px;
+  }
+  }
