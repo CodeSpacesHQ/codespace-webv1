@@ -507,6 +507,7 @@ section.build-your-dream-container {
   }
   .build-your-dream-container .container-fluid .build-your-dream-img-container {
     text-align: center;
+    margin-bottom: 20px;
   }
   .build-your-dream-container
     .container-fluid
@@ -519,5 +520,10 @@ section.build-your-dream-container {
   nav .navbar-nav {
     background: var(--bg-color);
     padding: 0px 20px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .showcase-img {
+    width: 50% !important;
   }
 }
