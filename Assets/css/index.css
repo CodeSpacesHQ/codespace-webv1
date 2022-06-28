@@ -445,4 +445,60 @@ section.build-your-dream-container {
   .headline .headline-grid {
     display: none;
   }
+  /* Vision media query  */
+  .vision-section-container .vision-section-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .vision-section-container .vision-section-text-container h2 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .vision-section-container .vision-section-text-container p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  /* Build Your Dream Styles  */
+  .build-your-dream-container
+    .container-fluid
+    .build-your-dream-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    padding-bottom: 40px;
+  }
+  .build-your-dream-container
+    .container-fluid
+    .build-your-dream-text-container
+    h1 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .build-your-dream-container
+    .container-fluid
+    .build-your-dream-text-container
+    p {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .build-your-dream-container .container-fluid .build-your-dream-img-container {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .build-your-dream-container
+    .container-fluid
+    .build-your-dream-img-container
+    .build-future-project-img-1 {
+    position: static;
+  }
 }
