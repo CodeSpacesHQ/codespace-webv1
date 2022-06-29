@@ -327,6 +327,7 @@ section.headline {
 /* Build Your Dream Styles  */
 section.build-your-dream-container {
   background-color: var(--active-color);
+  padding-bottom: 25px;
 }
 .build-your-dream-container .container-fluid .build-your-dream-text-container {
   display: flex;
@@ -361,7 +362,88 @@ section.build-your-dream-container {
   position: relative;
   top: -20px;
 }
-/* Navbar Media Query  */
+
+/* Review Section Media Query */
+section.testimonial-section {
+  background: var(--active-color);
+  text-align: center;
+}
+.testimonial-section h2 {
+  color: var(--primary-text-color);
+  padding: 25px 0px;
+}
+.testimonial-item-container {
+  width: 360px;
+  background-color: var(--secondary-bg);
+  padding: 35px 30px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.testimonial-header {
+  text-align: left;
+}
+.testimonial-header p {
+  font-size: 0.8rem;
+}
+.star-filled {
+  color: #feb800;
+}
+.testimonial-item-container .testimonial-footer {
+  display: flex;
+  gap: 5px;
+}
+.testimonial-footer .testimonial-img-and-text-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.testimonial-img-and-text-container img {
+  width: 10%;
+}
+.testimonial-img-and-text-container .text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.testimonial-img-and-text-container .text-container .h4 {
+  font-size: 0.85rem;
+}
+.testimonial-img-and-text-container .text-container:last-child {
+  font-size: 0.7rem;
+}
+.testimonial-footer .testimonial-stars-and-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.testimonial-footer .testimonial-stars-and-rating .stars {
+  display: inline-flex;
+}
+
+.testimonial-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-color);
+  margin-top: 30px;
+  opacity: 1;
+}
+.testimonial-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background: #feb800;
+}
+/* //// */
+/* //// */
+/* //// */
+/* //// */
+/* //// */
+/* //// */
+/* //// */
+/* //// */
+/* //// */
+/*  Media Query  */
 @media only screen and (max-width: 1200px) {
   /* Showcase Media Query  */
   .showcase {
