@@ -639,6 +639,9 @@ footer.main-footer {
   .text-primary-white{
   color: var(--active-color);
 }
+.ml-2{
+  font-size: 0.8rem;
+}
 }
 @media only screen and (min-width: 1900px) {
   .showcase-img {
